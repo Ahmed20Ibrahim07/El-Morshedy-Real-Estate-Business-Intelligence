@@ -1,99 +1,103 @@
-# El-Morshedy Real Estate — BI Dashboard
+# El-Morshedy Real Estate Business Intelligence
 
-A Power BI Business Intelligence solution for tracking installment sales and collections across **8 residential real estate projects**, replacing fragmented Excel reporting with a single, governed, refreshable data model.
-
-> Graduation Project — Data Analysis & Business Intelligence
-> September 2026
+> An interactive Power BI Business Intelligence solution for analyzing real estate sales, collections, payments, invoices, and outstanding balances across multiple residential projects.
 
 ---
 
-## 📌 Overview
+## 📊 Project Overview
 
-El-Morshedy Real Estate sells residential units across eight independent projects on multi-year installment plans. Before this project, each project's sales and collections were tracked in separate Excel workbooks — making it impossible to compare portfolios, spot overdue installments early, or separate cash from bank performance.
+This project presents an end-to-end Business Intelligence solution developed using Microsoft Power BI.
 
-This project consolidates all eight project portfolios into **one Power BI model** and a guided, self-service dashboard showing what has been sold, invoiced, collected, and what remains outstanding — company-wide and per project.
+The solution consolidates data from 8 residential real estate projects into a unified analytical environment, transforming scattered sales and installment records into interactive dashboards.
 
-**Projects covered:** Degla Palms · Degla Landmark · Crystal Plaza Maadi · Lake · Skyline Katameya · Rihana · Zahra · One Katameya
+The dashboard provides insights into:
 
----
+- Sales performance
+- Invoice amounts
+- Collected amounts
+- Outstanding balances
+- Installment status
+- Cash collections
+- Bank collections
+- Bank-wise performance
+- Customer-level collections
+- Project completion
 
-## 🎯 Objectives
-
-- Give management one consolidated view of collections across all eight projects
-- Surface overdue installments early for the collections team to act on
-- Separate cash from bank collections, and rank individual banks by performance
-- Replace manual, recurring Excel reporting with a refreshable Power BI model
-- Track sold units, project completion %, and outstanding balances at a glance
-
----
-
-## 🧰 Tools & Technologies
-
-| Tool | Role |
-|---|---|
-| Microsoft Excel | Source system (customers, units, sales, installments, payments, banks) |
-| Power Query | Importing, cleaning, standardizing, and reshaping 8 source workbooks |
-| Power BI Desktop | Star-schema data modeling, relationships, DAX layer |
-| DAX | All business logic — sales, collection, and outstanding measures |
-| Deneb (custom visual) | Vega-Lite powered collection-rate curves by installment number |
-| Power BI Service | Publishing and guided navigation |
+The main objective is to provide a single refreshable analytical view that supports data-driven business analysis and reduces reliance on manual reporting.
 
 ---
 
-## 🏗️ Data Model
+## 🏢 Projects Covered
 
-Each of the 8 projects is modeled as its own **star schema**: one installment fact table (grain: one row per customer per installment) joined to four dimension tables — Customer, Unit, Payment, and Date.
+The solution covers the following residential projects:
 
-**Power Query pipeline (9 stages, applied per project):**
-1. Import Excel Data
-2. Promote Headers
-3. Remove Unnecessary Data
-4. Change Data Types
-5. Clean Text & Values
-6. Unpivot Installments (P1–P7 → Installment Number / Value)
-7. Split Payment Status / Amount
-8. Correct Date / Locale
-9. Final Cleaned Table
-
-The 8 independent project stars roll up into a **company-wide Global Summary** using `TREATAS` to simulate cross-model filtering, since the project fact tables have no physical relationship to each other.
+- Degla Palms
+- Degla Landmark
+- Crystal Plaza Maadi
+- Lake Front 6
+- Skyline Katameya
+- Rihana
+- Zahra North Coast
+- One Katameya
 
 ---
 
-## 📐 Key DAX Measures
+## 📈 Key Project Metrics
 
-| Measure | Logic |
-|---|---|
-| `Sold Count` | `DISTINCTCOUNT` of customers who own a unit |
-| `Sold %` | Sold Count ÷ total adopted units |
-| `Project Completion %` | `AVERAGE` of unit-level POC (construction progress) |
-| `Collection Rate` | Collected Invoices ÷ Issued Invoices |
-| `Outstanding Amount` | Total Invoice Amount − Collected Amount |
-| `Outstanding %` | Outstanding Invoices ÷ Issued Invoices |
-
-Also handled: duplicate-row prevention after unpivoting, `REMOVEFILTERS` for fixed-denominator ratios, and project-name standardization across inconsistently labeled source files.
+| Metric | Value |
+|---|---:|
+| Residential Projects | 8 |
+| Report Pages | 35 |
+| Model Tables | 51 |
+| Sold Contracts | 3,088 |
+| Units | 73,943 |
+| Invoice Amount | EGP 13.88B |
 
 ---
 
-## 📊 Dashboard Structure (35 pages)
+## 🎯 Business Problem
 
-- **Landing Page** — 11 navigation buttons to every part of the model
-- **Global Summary** — cross-project pivot: Units, Sold %, Unit Price, Collected, Outstanding, per project
-- **Collection by Date Summary** — collection trend across NEW/OLD periods, with a Date slicer
-- **8 × Project pages** (Overall / Cash / Bank / Bank-wise), each with:
-  - KPI cards (Sold Count, Project Completion %, Adopted Units)
-  - Donut chart of Installment State by Payment Method
-  - Deneb collection-rate curves by installment number
-  - Bank-wise ranking of collected vs. outstanding value
+Before the dashboard, collection reporting was fragmented across individual project files and required recurring manual reporting.
+
+### 1. Fragmented Data
+
+Each project maintained its own installment data, making it difficult to obtain a unified company-wide view.
+
+### 2. Limited Arrears Visibility
+
+Overdue installments were difficult to identify quickly, limiting visibility into outstanding balances and collection follow-up.
+
+### 3. Cash vs. Bank Blind Spot
+
+Cash and bank collections were mixed together, making payment-channel analysis difficult.
+
+### 4. Manual Reporting
+
+Reports had to be repeatedly prepared and consolidated, making the process slower and harder to maintain.
 
 ---
 
-## 💡 Key Insights
+## 💡 Solution
 
-- **Collection rate is the real health signal** — a project can be nearly fully sold while collections lag behind
-- **Outstanding balance concentrates in later installments** — arrears build up over the payment schedule
-- **Channel mix changes the risk profile** — cash vs. bank performance differs, and some banks settle more reliably than others
-- **A small set of customers drives the outstanding balance** — a short priority list covers most of it
+A centralized Power BI analytical solution was developed with three analytical levels:
 
----
 
-## 📁 Repository Contents
+```mermaid
+flowchart TD
+
+A[Raw Project Data] --> B[Power Query]
+B --> C[Data Cleaning & Transformation]
+C --> D[Data Modeling]
+D --> E[DAX Measures]
+E --> F[Power BI Semantic Model]
+
+F --> G[Project]
+G --> H[Global Summary]
+H --> I[Collection by Date Summary]
+
+I --> J[Project Views]
+
+J --> K[Overall]
+J --> L[Cash]
+J --> M[Bank]
+J --> N[Bank-wise Analysis]
