@@ -84,23 +84,19 @@ A centralized Power BI analytical solution was developed with three analytical l
 ```mermaid
 flowchart TD
 
-A[Raw Project Data] --> B[Power Query]
-B --> C[Data Cleaning & Transformation]
-C --> D[Data Modeling]
-D --> E[DAX Measures]
-E --> F[Power BI Semantic Model]
+A[Power BI Semantic Model]
+B[Project]
+C[Global Summary]
+D[Collection by Date Summary]
 
-F --> G[Company Level]
-F --> H[Project Level]
-F --> I[Payment Channel Level]
+A --> B
+B --> C
+C --> D
 
-G --> G1[Global Summary]
-G --> G2[Collection by Date]
+D --> E[Project Views]
 
-H --> H1[Project Overall]
-H --> H2[Sales Performance]
-H --> H3[Collection Analysis]
-
-I --> I1[Cash]
-I --> I2[Bank]
+E --> F[Overall]
+E --> G[Cash]
+E --> H[Bank]
+E --> I[Bank-wise Analysis]
 I --> I3[Bank-wise Analysis]
