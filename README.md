@@ -216,23 +216,40 @@ The same transformation pipeline was applied across the eight projects to ensure
 
 ## 📊 Dashboard Structure
 
-The Power BI report contains 35 report pages organized into three analytical levels.
+The Power BI solution follows an end-to-end analytical workflow, starting from the raw project data and ending with interactive project-level analysis.
 
-### Company Level
+```mermaid
+flowchart TD
 
-- Landing Page
-- Global Summary
-- Collection by Date Summary
+A[Raw Project Data] --> B[Power Query]
+B --> C[Data Cleaning & Transformation]
+C --> D[Data Modeling]
+D --> E[DAX Measures]
+E --> F[Power BI Semantic Model]
 
-### Project Level
+F --> G[Project]
+G --> H[Global Summary]
+H --> I[Collection by Date Summary]
 
-Each project contains four analytical views:
+I --> J[Project Views]
 
-- Overall
-- Cash
-- Bank
-- Bank-wise Analysis
+J --> K[Overall]
+J --> L[Cash]
+J --> M[Bank]
+J --> N[Bank-wise Analysis]
+```
 
+### Dashboard Navigation
+
+The report is structured into the following analytical views:
+
+- **Global Summary** — Consolidated view across all projects.
+- **Collection by Date Summary** — Collection analysis over time.
+- **Project Views** — Detailed project-level analysis.
+- **Overall** — Complete project performance overview.
+- **Cash** — Cash collection analysis.
+- **Bank** — Bank collection analysis.
+- **Bank-wise Analysis** — Detailed comparison across banks.
 ---
 
 ## 📸 Dashboard Preview
