@@ -305,33 +305,45 @@ The report is structured into the following analytical views:
 ---
 ## 📁 Repository Contents
 
-```text
-El-Morshedy-Real-Estate-Business-Intelligence/
-│
-├── 📊 El-Morshedy Real State.pbix
-│   └── Full interactive Power BI report
-│
-├── 📑 El-Morshedy-Real_Estate-Presentation.pptx
-│   └── Project presentation deck
-│
-├── 📄 El-Morshedy_Project_Documentation.pdf
-│   └── Full project documentation
-│
-├── 🖼️ screenshots/
-│   ├── Landing Page.png
-│   ├── Global Summary.png
-│   ├── Collection By Date Summary.png
-│   ├── Project Overall.png
-│   ├── Cash Analysis .png
-│   ├── Bank Analysis .png
-│   └── Bank Wise Analysis .png
-│      
-│
-└── 📘 README.md
-    └── Project documentation and technical overview
+The repository contains the complete Power BI solution, project documentation, presentation, and dashboard screenshots.
+
+### 📊 Power BI Report
+
+**El-Morshedy Real State.pbix**  
+Full interactive Power BI report containing the complete analytical model, DAX measures, and dashboard pages.
+
+### 📑 Project Presentation
+
+**El-Morshedy-Real_Estate-Presentation.pptx**  
+Project presentation covering the business problem, methodology, analysis, and key insights.
+
+### 📄 Project Documentation
+
+**El-Morshedy_Project_Documentation.pdf**  
+Full project documentation covering the technical implementation, data preparation, data model, DAX measures, and analytical approach.
+
+### 🖼️ Dashboard Screenshots
+
+The `screenshots/` folder contains selected dashboard views:
+
+- Landing Page
+- Global Summary
+- Collection By Date Summary
+- Project Overall
+- Cash Analysis
+- Bank Analysis
+- Bank Wise Analysis
+
+### 📘 README
+
+**README.md**  
+Project documentation and technical overview.
+
 ---
 
 ## 🚀 Future Scope
+
+The solution can be further extended with:
 
 - Automated refresh with overdue-balance alerts
 - Ageing buckets and customer risk scoring
@@ -343,11 +355,13 @@ El-Morshedy-Real-Estate-Business-Intelligence/
 
 ## 👥 Team Members
 
-- Ahmed Ibrahim
-- Abdelazzim Ramy
-- Amina Elsayed
-- Nada Mohamed
+This project was developed by:
+
+- **Ahmed Ibrahim**
+- **Abdelazzim Ramy**
+- **Amina Elsayed**
+- **Nada Mohamed**
+
 ---
 
 > **One row per customer per installment**
-
