@@ -9,9 +9,20 @@
 </p>
 
 <p align="center">
- This project presents an end-to-end Business Intelligence solution developed using Microsoft Power BI.
+  This project presents an end-to-end Business Intelligence solution developed using Microsoft Power BI.
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-yellow">
+  <img src="https://img.shields.io/badge/Star%20Schema-Data%20Model-blue">
+  <img src="https://img.shields.io/badge/DAX-13%2B%20Measures-orange">
+  <img src="https://img.shields.io/badge/Deneb-Vega--Lite-purple">
+  <img src="https://img.shields.io/badge/Projects-8-blue">
+  <img src="https://img.shields.io/badge/Report%20Pages-35-blue">
+  <img src="https://img.shields.io/badge/Status-Complete-brightgreen">
+</p>
+
+---
 ---
 
 ## 📌 Project Overview
