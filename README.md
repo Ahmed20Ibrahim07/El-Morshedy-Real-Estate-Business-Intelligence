@@ -1,14 +1,15 @@
 # El-Morshedy Real Estate Business Intelligence
 
-> An interactive Power BI Business Intelligence solution for analyzing real estate sales, collections, payments, invoices, and outstanding balances across multiple residential projects.
-
+> End-to-end real estate analytics project built with Power BI, Power Query, DAX, and interactive data visualizations.
 ---
 
 ## 📊 Project Overview
 
-This project presents an end-to-end **Business Intelligence solution** developed using Microsoft Power BI.
+This project presents an end-to-end Business Intelligence solution developed using Microsoft Power BI.
 
-The solution consolidates data from **8 residential real estate projects** into a unified analytical environment, transforming scattered installment and sales records into interactive dashboards that provide visibility into:
+The solution consolidates data from 8 residential real estate projects into a unified analytical environment, transforming scattered sales and installment records into interactive dashboards.
+
+The dashboard provides insights into:
 
 - Sales performance
 - Invoice amounts
@@ -21,13 +22,13 @@ The solution consolidates data from **8 residential real estate projects** into 
 - Customer-level collections
 - Project completion
 
-The objective is to provide a **single refreshable source of truth** that supports data-driven business analysis and reduces reliance on manual reporting.
+The main objective is to provide a single refreshable analytical view that supports data-driven business analysis and reduces reliance on manual reporting.
 
 ---
 
 ## 🏢 Projects Covered
 
-The analytical model covers the following residential projects:
+The solution covers the following residential projects:
 
 - Degla Palms
 - Degla Landmark
@@ -39,8 +40,10 @@ The analytical model covers the following residential projects:
 - One Katameya
 
 ---
+
 ## 📈 Key Project Metrics
-  | Metric | Value |
+
+| Metric | Value |
 |---|---:|
 | Residential Projects | 8 |
 | Report Pages | 35 |
@@ -49,25 +52,25 @@ The analytical model covers the following residential projects:
 | Units | 73,943 |
 | Invoice Amount | EGP 13.88B |
 
+---
+
 ## 🎯 Business Problem
 
-Before the dashboard, collection reporting was fragmented across individual project files and required recurring manual Excel reporting.
+Before the dashboard, collection reporting was fragmented across individual project files and required recurring manual reporting.
 
-### Main Business Challenges
-
-**1. Fragmented Data**
+### 1. Fragmented Data
 
 Each project maintained its own installment data, making it difficult to obtain a unified company-wide view.
 
-**2. Limited Arrears Visibility**
+### 2. Limited Arrears Visibility
 
 Overdue installments were difficult to identify quickly, limiting visibility into outstanding balances and collection follow-up.
 
-**3. Cash vs. Bank Blind Spot**
+### 3. Cash vs. Bank Blind Spot
 
 Cash and bank collections were mixed together, making payment-channel analysis difficult.
 
-**4. Manual Reporting**
+### 4. Manual Reporting
 
 Reports had to be repeatedly prepared and consolidated, making the process slower and harder to maintain.
 
