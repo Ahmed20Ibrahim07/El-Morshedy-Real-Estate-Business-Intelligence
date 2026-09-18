@@ -139,3 +139,152 @@ The fact table operates at the grain of:
                     ┌────────┴─────────┐
                     │    Date Dim      │
                     └──────────────────┘
+## 🔄 Data Preparation & Transformation
+
+The data preparation process was implemented using Power Query.
+
+The same transformation pipeline was applied across the eight projects to ensure consistency and comparability.
+
+### Power Query Pipeline
+
+1. Import Excel Data
+2. Promote Headers
+3. Remove Unnecessary Data
+4. Change Data Types
+5. Clean Text & Values
+6. Unpivot Installments (P1–P7)
+7. Split Payment Status / Amount
+8. Correct Date / Locale
+9. Final Cleaned Table
+
+## 📐 Key DAX Measures
+
+| Measure | Logic |
+|---|---|
+| Sold Count | DISTINCTCOUNT of customers who own a unit |
+| Sold % | Sold Count ÷ Total Adopted Units |
+| Project Completion % | AVERAGE of unit-level POC |
+| Total Invoice Amount | SUM of installment amounts |
+| Issued Invoices | Paid + Due – Not Paid installments |
+| Collected Invoices | Count of Paid installments |
+| Collected Amount | SUM of Paid installment amounts |
+| Collection Rate | Collected Invoices ÷ Issued Invoices |
+| Outstanding Invoices | Issued Invoices − Collected Invoices |
+| Outstanding Amount | Total Invoice Amount − Collected Amount |
+| Outstanding % | Outstanding Invoices ÷ Issued Invoices |
+
+## 📊 Key Project Metrics
+
+### Sales Metrics
+
+- Adopted Total Units
+- Sold Count
+- Sold %
+- Project Completion %
+- Unit Price
+- Total Invoice Amount
+
+### Collection Metrics
+
+- Issued Invoices
+- Collected Invoices
+- Collected Amount
+- Collection Rate
+- Outstanding Invoices
+- Outstanding Amount
+- Outstanding %
+
+### Payment Metrics
+
+- Cash Collections
+- Bank Collections
+- Bank-wise Collections
+- Bank-wise Outstanding Amount
+
+### Customer Metrics
+
+- Customer-level Collections
+- Customer Concentration
+- Customer Counts
+
+## 📊 Dashboard Structure
+
+The Power BI report contains 35 report pages organized into three analytical levels:
+
+### Company Level
+
+- Landing Page
+- Global Summary
+- Collection by Date Summary
+
+### Project Level
+
+Each project contains four analytical views:
+
+- Overall
+- Cash
+- Bank
+- Bank-wise Analysis
+## 📸 Dashboard Preview
+
+### Global Summary
+
+![Global Summary](screenshots/global-summary.png)
+
+### Project Overall
+
+![Project Overall](screenshots/project-overall.png)
+
+### Cash Analysis
+
+![Cash Analysis](screenshots/cash-analysis.png)
+
+### Bank Analysis
+
+![Bank Analysis](screenshots/bank-analysis.png)
+
+### Bank-wise Analysis
+
+![Bank-wise Analysis](screenshots/bank-wise.png)
+## 📁 Repository Contents
+
+```text
+El-Morshedy-Real-Estate/
+│
+├── 📊 El-Morshedy_Real_State.pbix
+│   └── Full interactive Power BI report
+│
+├── 📑 El-Morshedy-Real_Estate-Presentation.pptx
+│   └── Project presentation deck
+│
+├── 📄 El-Morshedy_Project_Documentation.pdf
+│   └── Full project documentation
+│
+├── 🖼️ screenshots/
+│   └── Dashboard screenshots
+│
+└── README.md
+    └── Project documentation
+
+
+ 
+---
+
+# 🚀 1️⃣5️⃣ Future Scope
+
+
+```markdown
+## 🚀 Future Scope
+
+- Automated refresh with overdue-balance alerts
+- Ageing buckets and customer risk scoring
+- Forecasting expected monthly collections
+- Row-level security per project
+- Mobile dashboard layout   
+
+## 👥 Team Members
+
+- Ahmed Ibrahim
+- Abdelazzim Ramy
+- Amina Elsayed
+- Nada Mohamed
