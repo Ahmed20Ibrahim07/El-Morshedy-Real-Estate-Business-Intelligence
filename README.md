@@ -139,7 +139,11 @@ The fact table operates at the grain of:
                     ┌────────┴─────────┐
                     │    Date Dim      │
                     └──────────────────┘
-## 🔄 Data Preparation & Transformation
+                    
+---
+ 
+ 
+ ## 🔄 Data Preparation & Transformation
 
 The data preparation process was implemented using Power Query.
 
