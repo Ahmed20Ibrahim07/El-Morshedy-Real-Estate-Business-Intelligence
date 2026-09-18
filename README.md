@@ -81,6 +81,7 @@ Reports had to be repeatedly prepared and consolidated, making the process slowe
 
 A centralized Power BI analytical solution was developed with three analytical levels:
 
+
 ```mermaid
 flowchart TD
 
@@ -100,5 +101,3 @@ J --> K[Overall]
 J --> L[Cash]
 J --> M[Bank]
 J --> N[Bank-wise Analysis]
-V --> BNK[Bank]
-V --> BWA[Bank-wise Analysis]]
