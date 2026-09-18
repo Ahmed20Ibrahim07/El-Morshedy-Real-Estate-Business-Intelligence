@@ -106,25 +106,7 @@ The main objectives of the project are:
 | **Power BI Service** | Publishing and guided report navigation |
 
 ---
-```mermaid
-flowchart TD
 
-A[Raw Project Data] --> B[Power Query]
-B --> C[Data Cleaning & Transformation]
-C --> D[Data Modeling]
-D --> E[DAX Measures]
-E --> F[Power BI Semantic Model]
-
-F --> G[Project]
-G --> H[Global Summary]
-H --> I[Collection by Date Summary]
-
-I --> J[Project Views]
-
-J --> K[Overall]
-J --> L[Cash]
-J --> M[Bank]
-J --> N[Bank-wise Analysis]
 # 🏗️ Data Model
 
 The solution uses a **Star Schema architecture**.
