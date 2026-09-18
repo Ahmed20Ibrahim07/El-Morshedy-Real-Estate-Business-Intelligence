@@ -286,11 +286,15 @@ The report is structured into the following analytical views:
 
 ### Cash Analysis
 
-![Cash Analysis](screenshots/Cash%20Analysis.png)
+![Cash Analysis](screenshots/Cash%20Analysis%20.png)
 
 ### Bank Analysis
 
-![Bank Analysis](screenshots/Bank%20Analysis.png)
+![Bank Analysis](screenshots/Bank%20Analysis%20.png)
+
+### Bank-wise Analysis
+
+![Bank-wise Analysis](screenshots/Bank%20Wise%20Analysis%20.png)
 
 ### Bank-wise Analysis
 
