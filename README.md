@@ -325,27 +325,7 @@ El-Morshedy-Real-Estate-Business-Intelligence/
 │   ├── Cash Analysis .png
 │   ├── Bank Analysis .png
 │   └── Bank Wise Analysis .png
-│      
 │
-└── 📘 README.md
-    └── Project documentation and technical overview
-
-## 🚀 Future Scope
-
-- Automated refresh with overdue-balance alerts
-- Ageing buckets and customer risk scoring
-- Forecasting expected monthly collections
-- Row-level security per project
-- Mobile dashboard layout
-
----
-
-## 👥 Team Members
-
-- Ahmed Ibrahim
-- Abdelazzim Ramy
-- Amina Elsayed
-- Nada Mohamed
-
-> **One row per customer per installment**
-
+├── 📘 README.md
+│   └── Project documentation and technical overview
+│
