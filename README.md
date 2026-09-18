@@ -81,7 +81,6 @@ Reports had to be repeatedly prepared and consolidated, making the process slowe
 
 A centralized Power BI analytical solution was developed with three analytical levels:
 
-```mermaid
 flowchart TD
 
 A[Raw Project Data] --> B[Power Query]
@@ -93,10 +92,10 @@ E --> F[Power BI Semantic Model]
 F --> G[Project]
 G --> H[Global Summary]
 H --> I[Collection by Date Summary]
-I --> J[Overall]
-J --> K[Cash]
-K --> L[Bank]
-L --> M[Bank-wise Analysis]
-I --> I1[Cash]
-I --> I2[Bank]
-I --> I3[Bank-wise Analysis]
+
+I --> J[Project Views]
+
+J --> K[Overall]
+J --> L[Cash]
+J --> M[Bank]
+J --> N[Bank-wise Analysis]
