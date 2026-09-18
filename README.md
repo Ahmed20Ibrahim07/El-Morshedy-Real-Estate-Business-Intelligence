@@ -1,10 +1,6 @@
 # 🏢 El-Morshedy Real Estate — Business-Intelligence
 
 <p align="center">
-  <img src="screenshots/dashboard-overview.png" alt="El-Morshedy Real Estate Dashboard" width="900"/>
-</p>
-
-<p align="center">
   <b>Data Analysis & Business Intelligence Graduation Project</b>
 </p>
 
