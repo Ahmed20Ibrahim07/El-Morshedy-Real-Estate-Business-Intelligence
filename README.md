@@ -271,6 +271,10 @@ The report is structured into the following analytical views:
 
 ![Global Summary](screenshots/global-summary.png)
 
+### Collection by Date Summary
+
+![Collection by Date Summary](screenshots/Collection%20By%20Date%20Summary.png)
+
 ### Project Overall
 
 ![Project Overall](screenshots/project-overall.png)
@@ -288,7 +292,6 @@ The report is structured into the following analytical views:
 ![Bank-wise Analysis](screenshots/bank-wise.png)
 
 ---
-
 ## 📁 Repository Contents
 
 ```text
