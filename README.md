@@ -103,3 +103,11 @@ H --> H3[Collection Analysis]
 I --> I1[Cash]
 I --> I2[Bank]
 I --> I3[Bank-wise Analysis]
+flowchart LR
+
+A[Source Files] --> B[Import]
+B --> C[Data Cleaning]
+C --> D[Data Transformation]
+D --> E[Data Modeling]
+E --> F[DAX Measures]
+F --> G[Power BI Dashboard]
