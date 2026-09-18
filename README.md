@@ -193,6 +193,16 @@ The same transformation pipeline was applied across the eight projects to ensure
 
 ## 📊 Key Project Metrics
 
+| Metric | Value |
+|---|---:|
+| Report Pages | 35 |
+| Projects Covered | 8 |
+| Adopted Total Units | 73,943 |
+| Sold Count | 3,088 |
+| Total Unit Value | 18.64B EGP |
+| Total Invoice Amount | 13.88B EGP |
+| Collected Amount | 13.09B EGP |
+| Outstanding Amount | 791M EGP |
 ### Sales Metrics
 
 - Adopted Total Units
