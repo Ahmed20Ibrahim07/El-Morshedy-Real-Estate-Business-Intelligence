@@ -1,103 +1,39 @@
-# El-Morshedy Real Estate Business Intelligence
+# El-Morshedy Real Estate — Installment Sales & Collections Analytics
 
-> An interactive Power BI Business Intelligence solution for analyzing real estate sales, collections, payments, invoices, and outstanding balances across multiple residential projects.
+**A Power BI collection intelligence solution covering 8 residential real estate projects — from 8 fragmented Excel workbooks to a governed multi-star-schema model and a 35-page guided report.**
 
----
-
-## 📊 Project Overview
-
-This project presents an end-to-end Business Intelligence solution developed using Microsoft Power BI.
-
-The solution consolidates data from 8 residential real estate projects into a unified analytical environment, transforming scattered sales and installment records into interactive dashboards.
-
-The dashboard provides insights into:
-
-- Sales performance
-- Invoice amounts
-- Collected amounts
-- Outstanding balances
-- Installment status
-- Cash collections
-- Bank collections
-- Bank-wise performance
-- Customer-level collections
-- Project completion
-
-The main objective is to provide a single refreshable analytical view that supports data-driven business analysis and reduces reliance on manual reporting.
+![Power BI](https://img.shields.io/badge/Power%20BI-Star%20Schema-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+![DAX](https://img.shields.io/badge/DAX-13%2B%20Measures-005A9C?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Complete-2E7D32?style=flat-square)
 
 ---
 
-## 🏢 Projects Covered
+## 🎯 The Business Problem
 
-The solution covers the following residential projects:
+El-Morshedy Real Estate sells units across 8 concurrent projects using multi-year installment plans. Before this project, each project kept its own Excel workbook, and management had no single, reliable way to answer:
 
-- Degla Palms
-- Degla Landmark
-- Crystal Plaza Maadi
-- Lake Front 6
-- Skyline Katameya
-- Rihana
-- Zahra North Coast
-- One Katameya
+- What has become **due**, what has actually been **collected**, and what remains **outstanding**?
+- Where are overdue installments concentrated — before it's too late to act on them?
+- How does **cash** collection compare to **bank** collection — and how do individual banks perform against each other?
+- How does each project's **sales progress** compare to its actual **collection health**?
+
+This solution answers all four — with drill-down from a company-wide view down to a single bank's performance on a single project.
 
 ---
 
-## 📈 Key Project Metrics
+## 📊 Results at a Glance
 
 | Metric | Value |
-|---|---:|
-| Residential Projects | 8 |
-| Report Pages | 35 |
-| Model Tables | 51 |
-| Sold Contracts | 3,088 |
-| Units | 73,943 |
-| Invoice Amount | EGP 13.88B |
+|---|---|
+| Projects unified into one model | **8** |
+| Report pages | **35** |
+| Tables across the combined star schemas | **~51** |
+| Core DAX measures (per-project, replicated 8×) | **13** |
+| Payment channels tracked | **Cash / Bank / Bank-wise** |
+| Installment states classified | **Paid / Due – Not Paid / Not Due** |
 
 ---
 
-## 🎯 Business Problem
+## 🧭 How to Navigate This Report
 
-Before the dashboard, collection reporting was fragmented across individual project files and required recurring manual reporting.
-
-### 1. Fragmented Data
-
-Each project maintained its own installment data, making it difficult to obtain a unified company-wide view.
-
-### 2. Limited Arrears Visibility
-
-Overdue installments were difficult to identify quickly, limiting visibility into outstanding balances and collection follow-up.
-
-### 3. Cash vs. Bank Blind Spot
-
-Cash and bank collections were mixed together, making payment-channel analysis difficult.
-
-### 4. Manual Reporting
-
-Reports had to be repeatedly prepared and consolidated, making the process slower and harder to maintain.
-
----
-
-## 💡 Solution
-
-A centralized Power BI analytical solution was developed with three analytical levels:
-
-
-```mermaid
-flowchart TD
-
-A[Raw Project Data] --> B[Power Query]
-B --> C[Data Cleaning & Transformation]
-C --> D[Data Modeling]
-D --> E[DAX Measures]
-E --> F[Power BI Semantic Model]
-
-F --> G[Project]
-G --> H[Global Summary]
-H --> I[Collection by Date Summary]
-
-I --> J[Project Views]
-
-J --> K[Overall]
-J --> L[Cash]
-J --> M[Bank]
-J --> N[Bank-wise Analysis]
+The report is built around one idea: **start company-wide, then zoom into a project and a channel.**
