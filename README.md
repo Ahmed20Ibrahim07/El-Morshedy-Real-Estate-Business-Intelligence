@@ -120,9 +120,6 @@ Each of the eight projects follows its own project-level star schema consisting 
 - Date Dimension
 
 The fact table operates at the grain of:
-
-> **One row per customer per installment**
-
 ### Core Model Structure
 
 ```text
@@ -139,11 +136,11 @@ The fact table operates at the grain of:
                     ┌────────┴─────────┐
                     │    Date Dim      │
                     └──────────────────┘
-                    
+```
+
 ---
- 
- 
- ## 🔄 Data Preparation & Transformation
+
+## 🔄 Data Preparation & Transformation
 
 The data preparation process was implemented using Power Query.
 
@@ -161,6 +158,8 @@ The same transformation pipeline was applied across the eight projects to ensure
 8. Correct Date / Locale
 9. Final Cleaned Table
 
+---
+
 ## 📐 Key DAX Measures
 
 | Measure | Logic |
@@ -176,6 +175,8 @@ The same transformation pipeline was applied across the eight projects to ensure
 | Outstanding Invoices | Issued Invoices − Collected Invoices |
 | Outstanding Amount | Total Invoice Amount − Collected Amount |
 | Outstanding % | Outstanding Invoices ÷ Issued Invoices |
+
+---
 
 ## 📊 Key Project Metrics
 
@@ -211,9 +212,11 @@ The same transformation pipeline was applied across the eight projects to ensure
 - Customer Concentration
 - Customer Counts
 
+---
+
 ## 📊 Dashboard Structure
 
-The Power BI report contains 35 report pages organized into three analytical levels:
+The Power BI report contains 35 report pages organized into three analytical levels.
 
 ### Company Level
 
@@ -229,6 +232,9 @@ Each project contains four analytical views:
 - Cash
 - Bank
 - Bank-wise Analysis
+
+---
+
 ## 📸 Dashboard Preview
 
 ### Global Summary
@@ -250,6 +256,9 @@ Each project contains four analytical views:
 ### Bank-wise Analysis
 
 ![Bank-wise Analysis](screenshots/bank-wise.png)
+
+---
+
 ## 📁 Repository Contents
 
 ```text
@@ -269,22 +278,19 @@ El-Morshedy-Real-Estate/
 │
 └── README.md
     └── Project documentation
+```
 
-
- 
 ---
 
-# 🚀 1️⃣5️⃣ Future Scope
-
-
-```markdown
 ## 🚀 Future Scope
 
 - Automated refresh with overdue-balance alerts
 - Ageing buckets and customer risk scoring
 - Forecasting expected monthly collections
 - Row-level security per project
-- Mobile dashboard layout   
+- Mobile dashboard layout
+
+---
 
 ## 👥 Team Members
 
@@ -292,3 +298,6 @@ El-Morshedy-Real-Estate/
 - Abdelazzim Ramy
 - Amina Elsayed
 - Nada Mohamed
+
+> **One row per customer per installment**
+
