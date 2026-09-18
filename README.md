@@ -122,21 +122,24 @@ Each of the eight projects follows its own project-level star schema consisting 
 The fact table operates at the grain of:
 ### Core Model Structure
 
-```text
-                    ┌──────────────────┐
-                    │   Customer Dim   │
-                    └────────┬─────────┘
-                             │
-                             │
-┌──────────────────┐         ▼         ┌──────────────────┐
-│    Unit Dim      │────► Project Fact ◄──── Payment Dim │
-└──────────────────┘         ▲         └──────────────────┘
-                             │
-                             │
-                    ┌────────┴─────────┐
-                    │    Date Dim      │
-                    └──────────────────┘
+The solution follows a **Star Schema architecture**.
+
+```mermaid
+flowchart TD
+
+C[Customer Dim] --> F[Project Fact]
+U[Unit Dim] --> F
+P[Payment Dim] --> F
+D[Date Dim] --> F
+
+style C fill:#E9E5FF,stroke:#9B7BFF,stroke-width:1px,color:#111
+style U fill:#E9E5FF,stroke:#9B7BFF,stroke-width:1px,color:#111
+style P fill:#E9E5FF,stroke:#9B7BFF,stroke-width:1px,color:#111
+style D fill:#E9E5FF,stroke:#9B7BFF,stroke-width:1px,color:#111
+style F fill:#E9E5FF,stroke:#9B7BFF,stroke-width:1px,color:#111
 ```
+
+The **Project Fact** table acts as the central fact table and is connected to the Customer, Unit, Payment, and Date dimensions.
 
 ---
 
