@@ -266,7 +266,6 @@ The report is structured into the following analytical views:
 ---
 
 ## 📸 Dashboard Preview
-## 📸 Dashboard Preview
 
 ### Landing Page
 
@@ -296,9 +295,6 @@ The report is structured into the following analytical views:
 
 ![Bank-wise Analysis](screenshots/Bank%20Wise%20Analysis%20.png)
 
-### Bank-wise Analysis
-
-![Bank-wise Analysis](screenshots/Bank%20Wise%20Analysis%20.png)
 
 ---
 ## 📁 Repository Contents
