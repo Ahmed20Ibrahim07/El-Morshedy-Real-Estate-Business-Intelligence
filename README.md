@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  Interactive Power BI solution for analyzing sales, installments, collections, outstanding balances, cash payments, and bank performance across eight residential projects.
+ This project presents an end-to-end Business Intelligence solution developed using Microsoft Power BI.
 </p>
 
 ---
