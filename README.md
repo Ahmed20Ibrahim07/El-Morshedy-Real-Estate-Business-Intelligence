@@ -300,9 +300,9 @@ The report is structured into the following analytical views:
 ## 📁 Repository Contents
 
 ```text
-El-Morshedy-Real-Estate/
+El-Morshedy-Real-Estate-Business-Intelligence/
 │
-├── 📊 El-Morshedy_Real_State.pbix
+├── 📊 El-Morshedy Real State.pbix
 │   └── Full interactive Power BI report
 │
 ├── 📑 El-Morshedy-Real_Estate-Presentation.pptx
@@ -312,13 +312,17 @@ El-Morshedy-Real-Estate/
 │   └── Full project documentation
 │
 ├── 🖼️ screenshots/
-│   └── Dashboard screenshots
+│   ├── Landing Page.png
+│   ├── Global Summary.png
+│   ├── Collection By Date Summary.png
+│   ├── Project Overall.png
+│   ├── Cash Analysis .png
+│   ├── Bank Analysis .png
+│   └── Bank Wise Analysis .png
+│      
 │
-└── README.md
-    └── Project documentation
-```
-
----
+└── 📘 README.md
+    └── Project documentation and technical overview
 
 ## 🚀 Future Scope
 
