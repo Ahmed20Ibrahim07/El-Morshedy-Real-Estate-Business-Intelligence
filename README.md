@@ -266,10 +266,15 @@ The report is structured into the following analytical views:
 ---
 
 ## 📸 Dashboard Preview
+## 📸 Dashboard Preview
+
+### Landing Page
+
+![Landing Page](screenshots/Landing%20Page.png)
 
 ### Global Summary
 
-![Global Summary](screenshots/global-summary.png)
+![Global Summary](screenshots/Global%20Summary.png)
 
 ### Collection by Date Summary
 
@@ -277,19 +282,19 @@ The report is structured into the following analytical views:
 
 ### Project Overall
 
-![Project Overall](screenshots/project-overall.png)
+![Project Overall](screenshots/Project%20Overall.png)
 
 ### Cash Analysis
 
-![Cash Analysis](screenshots/cash-analysis.png)
+![Cash Analysis](screenshots/Cash%20Analysis.png)
 
 ### Bank Analysis
 
-![Bank Analysis](screenshots/bank-analysis.png)
+![Bank Analysis](screenshots/Bank%20Analysis.png)
 
 ### Bank-wise Analysis
 
-![Bank-wise Analysis](screenshots/bank-wise.png)
+![Bank-wise Analysis](screenshots/Bank%20Wise%20Analysis%20.png)
 
 ---
 ## 📁 Repository Contents
