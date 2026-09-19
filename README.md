@@ -334,6 +334,15 @@ The `screenshots/` folder contains selected dashboard views:
 - Bank Analysis
 - Bank Wise Analysis
 
+### 📊 Data Source
+
+The project is based on the original Excel data source containing sales, unit, customer, and installment information across the eight residential projects.
+
+The dataset was cleaned and transformed using Power Query before being integrated into the Power BI data model.
+
+**Source file:** `data/El_Morshedy Real Estate Data Source.xlsm`
+
+
 ### 📘 README
 
 **README.md**  
