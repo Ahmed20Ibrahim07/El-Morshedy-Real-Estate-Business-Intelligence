@@ -108,7 +108,7 @@ The main objectives of the project are:
 | **Power Query** | Data importing, cleaning, standardization, and transformation |
 | **Power BI Desktop** | Data modeling, relationships, DAX, and dashboard development |
 | **DAX** | Business logic and analytical measures |
-| **Deneb** | Custom Vega-Lite visualizations |
+| **Deneb** | Custom Vega visualizations |
 | **Power BI Service** | Publishing and guided report navigation |
 
 ---
